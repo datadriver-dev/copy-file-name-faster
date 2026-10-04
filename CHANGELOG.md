@@ -4,6 +4,10 @@ All notable changes to the "Copy File Name (Faster)" extension will be documente
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.5]
+
+- Support VS Code 1.129.0 and newer.
+
 ## [0.0.4]
 
 - Add Apache-2.0 license metadata and license text.
