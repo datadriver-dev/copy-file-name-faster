@@ -3,7 +3,7 @@
   "displayName": "Copy File Name (Faster)",
   "description": "Quickly copy file names from the context menu",
   "publisher": "PawanP1",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "icon": "images/icon.png",
   "license": "Apache-2.0",
   "repository": {
@@ -30,6 +30,12 @@
         {
           "command": "copy-file-name-faster.copyFileName",
           "group": "navigation"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "copy-file-name-faster.copyFileName",
+          "group": "2_copy"
         }
       ]
     }
