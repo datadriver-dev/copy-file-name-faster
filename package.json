@@ -3,8 +3,9 @@
   "displayName": "Copy File Name (Faster)",
   "description": "Quickly copy file names from the context menu",
   "publisher": "PawanP1",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "icon": "images/icon.png",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/datadriver-dev/copy-file-name-faster.git"
