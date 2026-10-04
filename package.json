@@ -3,8 +3,12 @@
   "displayName": "Copy File Name (Faster)",
   "description": "Quickly copy file names from the context menu",
   "publisher": "PawanP1",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datadriver-dev/copy-file-name-faster.git"
+  },
   "engines": {
     "vscode": "^1.140.0"
   },
