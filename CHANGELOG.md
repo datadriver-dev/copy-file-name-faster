@@ -4,6 +4,12 @@ All notable changes to the "Copy File Name (Faster)" extension will be documente
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.7]
+
+- Support VS Code 1.89.1 and newer.
+- Place Copy File Name at the top of the Explorer and editor tab context menus.
+- Add browser IDE usage details and screenshots to the README.
+
 ## [0.0.6]
 
 - Add Copy File Name to the open editor tab context menu.

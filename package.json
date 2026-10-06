@@ -1,9 +1,9 @@
 {
   "name": "copy-file-name-faster",
   "displayName": "Copy File Name (Faster)",
-  "description": "Quickly copy file names from the context menu",
+  "description": "Copy just a file or folder name from the VS Code Explorer or editor-tab menu, including compatible browser-hosted VS Code IDEs.",
   "publisher": "PawanP1",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "icon": "images/icon.png",
   "license": "Apache-2.0",
   "repository": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/datadriver-dev/copy-file-name-faster.git"
   },
   "engines": {
-    "vscode": "^1.129.0"
+    "vscode": "^1.89.1"
   },
   "categories": [
     "Other"
@@ -35,14 +35,12 @@
       "editor/title/context": [
         {
           "command": "copy-file-name-faster.copyFileName",
-          "group": "2_copy"
+          "group": "navigation"
         }
       ]
     }
   },
   "scripts": {
-    "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/extensionTests.js",
-    "pretest": "npm run compile-web",
     "vscode:prepublish": "npm run package-web",
     "compile-web": "npm run check-types && npm run lint && node esbuild.js",
     "watch-web": "npm-run-all -p watch-web:*",
@@ -50,20 +48,13 @@
     "watch-web:tsc": "tsc --noEmit --watch --project tsconfig.json",
     "package-web": "npm run check-types && npm run lint && node esbuild.js --production",
     "check-types": "tsc --noEmit",
-    "lint": "eslint src",
-    "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+    "lint": "eslint src"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
-    "@types/assert": "^1.5.11",
-    "@types/mocha": "^10.0.10",
-    "@types/vscode": "1.125.0",
-    "@vscode/test-web": "^0.0.81",
-    "assert": "^2.1.0",
+    "@types/vscode": "1.89.0",
     "esbuild": "^0.28.1",
     "eslint": "^10.5.0",
-    "glob": "^13.0.6",
-    "mocha": "^11.7.6",
     "npm-run-all": "^4.1.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.61.1"
