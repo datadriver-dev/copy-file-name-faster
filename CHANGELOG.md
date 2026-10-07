@@ -4,6 +4,10 @@ All notable changes to the "Copy File Name (Faster)" extension will be documente
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.8]
+
+- Add separate context-menu commands to copy a file name with or without its extension.
+
 ## [0.0.7]
 
 - Support VS Code 1.89.1 and newer.

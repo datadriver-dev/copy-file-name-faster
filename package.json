@@ -3,7 +3,7 @@
   "displayName": "Copy File Name (Faster)",
   "description": "Copy just a file or folder name from the VS Code Explorer or editor-tab menu, including compatible browser-hosted VS Code IDEs.",
   "publisher": "PawanP1",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "icon": "images/icon.png",
   "license": "Apache-2.0",
   "repository": {
@@ -22,6 +22,10 @@
     "commands": [
       {
         "command": "copy-file-name-faster.copyFileName",
+        "title": "Copy File Name with Extension"
+      },
+      {
+        "command": "copy-file-name-faster.copyFileNameWithoutExtension",
         "title": "Copy File Name"
       }
     ],
@@ -30,11 +34,19 @@
         {
           "command": "copy-file-name-faster.copyFileName",
           "group": "navigation"
+        },
+        {
+          "command": "copy-file-name-faster.copyFileNameWithoutExtension",
+          "group": "navigation"
         }
       ],
       "editor/title/context": [
         {
           "command": "copy-file-name-faster.copyFileName",
+          "group": "navigation"
+        },
+        {
+          "command": "copy-file-name-faster.copyFileNameWithoutExtension",
           "group": "navigation"
         }
       ]

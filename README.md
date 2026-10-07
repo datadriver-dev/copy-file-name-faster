@@ -4,7 +4,7 @@ Copy only a file or folder name from a VS Code context menu. No parent path, dia
 
 ## Use It
 
-Right-click a file or folder in the Explorer, or an open editor tab, and select **Copy File Name**. Paste the result wherever you need it.
+Right-click a file or folder in the Explorer, or an open editor tab, and choose **Copy File Name** to omit a file extension or **Copy File Name with Extension** to include it. Paste the result wherever you need it.
 
 ![VS Code web IDE with a folder selected in the Explorer](images/copy-file-name-explorer.png)
 
@@ -12,7 +12,7 @@ Right-click a file or folder in the Explorer, or an open editor tab, and select 
 
 ## How It Works
 
-VS Code passes the selected resource URI to the command. The extension takes the final path segment, including for folders, then writes that name using VS Code's `vscode.env.clipboard.writeText()` API. It does not read or send file contents.
+VS Code passes the selected resource URI to the command. The extension takes the final path segment and writes it using VS Code's `vscode.env.clipboard.writeText()` API. The extension-free option removes the final suffix after a dot, except for dotfiles such as `.env`. It does not read or send file contents.
 
 ## Browser IDEs
 
@@ -24,7 +24,8 @@ In an IDE such as Agentforce, clipboard writes still depend on the host exposing
 
 | Option | Clipboard result |
 | --- | --- |
-| **Copy File Name (Faster)** | Just the selected file or folder name |
+| **Copy File Name** | The selected name without its final file extension |
+| **Copy File Name with Extension** | The selected name including its extension |
 | VS Code **Copy Path** | The absolute path |
 | VS Code **Copy Relative Path** | The workspace-relative path |
 | Select and copy text manually | The text you select inside an open file |
